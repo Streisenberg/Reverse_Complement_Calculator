@@ -18,3 +18,13 @@ def comple(self):
         complement_dna += components[DNA[char]]
 
     return complement_dna
+
+def validateSeq(self):
+
+    nucleotides = ["A", "T", "G", "C"]
+
+    seq = self.upper()
+    for nuc in seq:
+        if nuc not in nucleotides:
+            return False
+    return seq
